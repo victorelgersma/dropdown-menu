@@ -1,18 +1,17 @@
 
-<!-- https://tailwindcss.com/docs/installation/play-cdn -->
 <!DOCTYPE html>
 <html lang="en">
-	<head>
+	<head class='p-0 m-0 font-monospace'>
 		<meta charset="utf-8">
 		<title> Dropdown Menu </title>
 		<script src="https://cdn.tailwindcss.com"></script>
 	</head>
-	<body class='p-0 m-0 font-mono'>
-		<ul class='bg-emerald-300'>
+	<body>
+		<ul>
 			<li><a href="#"> Home </a> </li>
 			<li>
 				<a href="#"> Languages 🔥</a>
-				<ul class="dropdown list-none bg-emerald-300">
+				<ul class="dropdown">
 					<li><a href="#"> HTML </a> </li>
 					<li><a href="#"> CSS </a> </li>
 					<li><a href="#"> JavaScript</a> </li>
@@ -23,6 +22,12 @@
 </html>
 
 <style>
+
+ul {
+	list-style: none;
+	background: #33438C;
+}
+
 ul li {
 	display: inline-block;
 	position: relative;
@@ -42,6 +47,7 @@ ul li ul.dropdown li {
 }
 ul li ul.dropdown {
 	width: 100%;
+	background: #22438C;
 	position: absolute;
 	z-index: 999;
 	display: none;
